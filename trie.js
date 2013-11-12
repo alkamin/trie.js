@@ -1,6 +1,7 @@
 var Trie = Trie || {};
-var Node = function () {};
-
+Trie.Node = function () {};
+//Underscore dependencies:
+//each, find, flatten
 
 //The Node is the building block for a full trie
 //A new trie is created by making a new trie node and expanding
@@ -8,7 +9,7 @@ var Node = function () {};
 //used for an auto-suggest feature
 
 // Example Use
-// 	 var theTrie = Object.create(Trie.Node.prototype).initialize();
+//   var theTrie = Object.create(Trie.Node.prototype).initialize();
 //   theTrie.expand("Testing");
 //   theResults = theTrie.search("Test").collect();
 //   >> theResults = ["Testing"]
